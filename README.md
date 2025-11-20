@@ -1,5 +1,16 @@
-# olo-investments webpages
+<p align="center">
+  <img src="YOUR_LOGO_URL_HERE" width="130" alt="OLO Investments Logo">
+</p>
 
-![task_01kagxfxg2e85sp6krngjph7b0_1763651958_img_1](https://github.com/user-attachments/assets/d87748e3-7e34-49a8-8721-32fed96a11d2)
+<h1 align="center">OLO Investments</h1>
+<p align="center">Quantitative Research • Market Intelligence • Autonomous Analysis Pipelines</p>
 
+---
+
+## 🚀 Übersicht
+
+**OLO Investments** ist ein datengesteuertes Research-Projekt, das tägliche Marktbewegungen, Smart-Money-Ströme und quantitative Signale dokumentiert.  
+Die Website sammelt alle täglichen Reports:
+
+🔗 **Aktuelle Seite:**  
 https://nadelritter.github.io/olo-investments/olo-investments-2025-11-20.html
