@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastercard Investment Analyse</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .page-break { page-break-after: always; }
+            button { display: none; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px solid #0066cc;
+            margin-bottom: 40px;
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+        
+        .logo-container img {
+            width: 180px;
+            height: 120px;
+            object-fit: contain;
+        }
+        
+        .olo-logo {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 2.5em;
+            margin: 20px 0 10px 0;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+        }
+        
+        .intro {
+            background: #f0f8ff;
+            padding: 20px;
+            border-left: 5px solid #0066cc;
+            margin: 30px 0;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin: 50px 0;
+        }
+        
+        h2 {
+            color: #0066cc;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        
+        .chart-container {
+            text-align: center;
+            margin: 30px 0;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .chart-caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .summary-table th,
+        .summary-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        .summary-table th {
+            background: #0066cc;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .summary-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .video-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .video-link:hover {
+            background: #cc0000;
+        }
+        
+        .disclaimer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+        
+        .print-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: inline-block;
+        }
+        
+        .print-link:hover {
+            background: #218838;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .logo-corner {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:window.print()" class="print-link">📄 Als PDF speichern</a>
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1763164870/search_images/bf270da24b54811a60f67589e30c37ee637d7dc2.jpg" alt="Mastercard Logo">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/a8bb44c4-977c-4b36-8fe5-b26935759cc6" alt="OLO Investments" class="olo-logo">
+        </div>
+        
+        <h1>Mastercard (MA) – Investmentgelegenheit</h1>
+        <div class="subtitle">
+            <strong>Aktie:</strong> Mastercard Inc.<br>
+            <strong>ISIN:</strong> US57636Q1040 | <strong>Ticker:</strong> MA
+        </div>
+    </div>
+
+    <div class="intro">
+        <strong>Tipp des Tages für die Shareholder des OLO Investmentfonds:</strong><br>
+        Ich sollte mich ja melden, wenn etwas sehr ängstlich ist und die Daten mir sagen, dass es eine gute Möglichkeit ist einzusteigen. Wichtig: Schrittweise, nicht alles auf einmal.
+    </div>
+
+    <div class="section">
+        <h2>1. Fear-Greed Index: Extreme Angst im Markt</h2>
+        
+        <div class="chart-container">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/0be9aff5-2652-45a4-b589-60764f535250" alt="Fear-Greed Index">
+            <div class="chart-caption">Mastercard Fear-Greed Index der letzten 270 Tage relativ zum SPY – Aktuell bei 0.00 (Extreme Fearful), Roter Punkt = Aktuellste Daten</div>
+        </div>
+        
+        <div class="highlight">
+            <strong>Der Fear-Greed Index ist aktuell sehr ängstlich</strong> – der Wert steht bei 0,00 (Extreme Fearful). Das bedeutet maximale Angst im Markt bezüglich Mastercard. Historisch sind solche extremen Angstphasen oft gute Einstiegspunkte.
+        </div>
+    </div>
+
+    <div class="section page-break">
+        <h2>2. Saisonalität: Tiefpunkt Anfang Oktober</h2>
+        
+        <div class="chart-container">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/3fc74a4a-edf6-40a8-a346-de3211b04534" alt="Seasonality Chart">
+            <div class="chart-caption">Yearly Seasonality für MA seit 2014-01-01</div>
+        </div>
+        
+        <div class="highlight">
+            <strong>Wenn man die letzten 10 Jahre kombiniert, war der Tiefpunkt sehr häufig Anfang Oktober.</strong> Die Saisonalität zeigt, dass MA typischerweise zwischen Tag 300-330 (Ende Oktober bis Ende November) seinen Jahrestiefpunkt erreicht. Wir befinden uns aktuell genau in diesem Zeitfenster (Tag 325, 20. November).
+        </div>
+        
+        <p>Nach diesem saisonalen Tief beginnt historisch eine Erholungsphase, die bis ins Frühjahr anhält.</p>
+    </div>
+
+    <div class="section page-break">
+        <h2>3. Fundamentale Analyse – Starkes Geschäftsmodell</h2>
+        
+        <div class="chart-container">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/148f654b-bef0-4df6-a7d8-839e82ae8a64" alt="Joseph Carlson YouTube">
+            <div class="chart-caption">Joseph Carlson: I'm Buying $10,000 to $20,000 Of This Stock</div>
+        </div>
+        
+        <p style="margin: 20px 0; font-size: 1.1em;">
+            <strong>YouTube Link:</strong> <a href="https://www.youtube.com/watch?v=Wf0IF1I96EY&t=480s" target="_blank" style="color: #0066cc; text-decoration: underline;">https://www.youtube.com/watch?v=Wf0IF1I96EY&t=480s</a>
+        </p>
+        
+        <h3 style="color: #0066cc; margin-top: 30px;">Fundamentale Stärken</h3>
+        
+        <ul>
+            <li><strong>Cashflow:</strong> Mastercard generiert außergewöhnlich starken Free Cashflow mit Margen von über 50%</li>
+            <li><strong>Schulden:</strong> Sehr geringe Verschuldung im Verhältnis zum Cashflow – konservative Bilanz</li>
+            <li><strong>Geschäftsmodell:</strong> Monopolstellung im Verkauf von Zahlungsdaten und Transaktionsdaten</li>
+            <li><strong>Netzwerkeffekt:</strong> Je mehr Händler und Banken Mastercard nutzen, desto wertvoller wird das Netzwerk</li>
+            <li><strong>Wachstumsmarkt:</strong> Globale Digitalisierung des Zahlungsverkehrs – langfristiger Megatrend</li>
+            <li><strong>Pricing Power:</strong> Oligopol-Position (zusammen mit Visa) ermöglicht Preissetzungsmacht</li>
+            <li><strong>Datenmonetarisierung:</strong> Verkauf von aggregierten Transaktionsdaten an Unternehmen für Marktanalysen</li>
+        </ul>
+        
+        <h3 style="color: #0066cc; margin-top: 30px;">Risiko-Management</h3>
+        
+        <ul>
+            <li>Mastercard trägt kein Kreditrisiko – die Bank trägt das Risiko, nicht Mastercard</li>
+            <li>Asset-light Business Model – minimale Kapitalinvestitionen nötig</li>
+            <li>Rezessionsresistent – Menschen zahlen auch in schwierigen Zeiten</li>
+        </ul>
+    </div>
+
+    <div class="section page-break">
+        <h2>Zusammenfassung</h2>
+        
+        <table class="summary-table">
+            <thead>
+                <tr>
+                    <th>Faktor</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Fear-Greed Index</strong></td>
+                    <td>Extreme Angst (0.00) – Kaufsignal</td>
+                </tr>
+                <tr>
+                    <td><strong>Saisonalität</strong></td>
+                    <td>Am historischen Tiefpunkt (November)</td>
+                </tr>
+                <tr>
+                    <td><strong>Fundamentaldaten</strong></td>
+                    <td>Exzellent (Cashflow, Monopol, Datenwert)</td>
+                </tr>
+                <tr>
+                    <td><strong>Geschäftsmodell</strong></td>
+                    <td>Starker Burggraben, Asset-light</td>
+                </tr>
+                <tr>
+                    <td><strong>Timing</strong></td>
+                    <td>Ideal für langfristigen Einstieg</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="highlight">
+            <strong>Fazit:</strong> Alle drei Faktoren (Sentiment, Saisonalität, Fundamentaldaten) sprechen aktuell für einen attraktiven Einstiegszeitpunkt bei Mastercard.
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <strong>Hinweis:</strong> Dies ist keine Anlageberatung. Jeder ist für seine eigenen Investitionsentscheidungen selbst verantwortlich.
+    </div>
+
+    <script>
+        // Automatisch print dialog öffnen nach dem Laden (optional)
+        // window.onload = function() { setTimeout(function() { window.print(); }, 500); };
+    </script>
+</body>
+</html>
+
