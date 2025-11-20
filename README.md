@@ -1,9 +1,11 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8f190f39-bd0b-461a-a271-6cf705d9ae7e" width="130" alt="OLO Investments Logo">
+  <img width="570" height="520" alt="Screenshot 2025-11-20 170723" src="https://github.com/user-attachments/assets/2d936b94-3603-4c53-b467-8563932d56a9" />
 </p>
 
 <h1 align="center">OLO Investments</h1>
 <p align="center">Quantitative Research</p>
+
+
 
 ---
 
