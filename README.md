@@ -11,3 +11,11 @@
 
 🔗 <strong>Aktuelle Seite:</strong><br>
 https://nadelritter.github.io/olo-investments/olo-investments-2025-11-20.html
+
+---
+
+## Prompt
+
+📝 
+
+
