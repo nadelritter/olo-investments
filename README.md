@@ -10,7 +10,7 @@
 ## Übersicht
 
 🔗 <strong>Aktuelle Tipps des Tages:</strong><br>
-https://nadelritter.github.io/olo-investments/olo-investments-2025-11-20.html
+https://nadelritter.github.io/olo-investments/olo-investments-2025-11-20.html (Mastercard)
 
 <br>
 
