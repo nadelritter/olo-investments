@@ -35,6 +35,7 @@ Erstelle einen PDF-Report für meine WhatsApp-Gruppe zu [Aktie] (ISIN: ...). Inv
 
 
 
-![69372302-5357-4e5a-b428-41a2b6b7842c](https://github.com/user-attachments/assets/e723803e-7d7d-447f-b633-6aa1ab8937b0)
+![69372302-5357-4e5a-b428-41a2b6b7842c](https://github.com/user-attachments/assets/e723803e-7d7d-447f-b633-6aa1ab8937b0){width=50%}
+
 
 
