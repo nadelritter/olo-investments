@@ -33,8 +33,12 @@ Das PDF muss optimal Mobile-tauglich sein
 Beispiel für den Start des Prompts:
 Erstelle einen PDF-Report für meine WhatsApp-Gruppe zu [Aktie] (ISIN: ...). Investment-Logo oben rechts. Die wichtigsten Grafiken/Charts/Bilder und Erklärungen (jeweils mit Bild und Absatz). Die Bilder findest du im Anhang.
 
+<br>
+<br>
+
+<p align="center">
+  <img width="220" alt="olo Render" src="https://github.com/user-attachments/assets/e723803e-7d7d-447f-b633-6aa1ab8937b0" />
+</p>
 
 
-
-<img src="https://github.com/user-attachments/assets/e723803e-7d7d-447f-b633-6aa1ab8937b0" alt="Chart" width="380" style="max-width:100%; height:auto; border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
 
