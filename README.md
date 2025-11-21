@@ -9,7 +9,7 @@
 
 ## Übersicht
 
-🔗 <strong>Aktuelle Seite:</strong><br>
+🔗 <strong>Aktuelle Tipps des Tages:</strong><br>
 https://nadelritter.github.io/olo-investments/olo-investments-2025-11-20.html
 
 <br>
