@@ -37,7 +37,7 @@ Erstelle einen PDF-Report für meine WhatsApp-Gruppe zu [Aktie] (ISIN: ...). Inv
 <br>
 
 <p align="center">
-  <img width="220" alt="olo Render" src="https://github.com/user-attachments/assets/e723803e-7d7d-447f-b633-6aa1ab8937b0" />
+  <img width="420" alt="olo Render" src="https://github.com/user-attachments/assets/e723803e-7d7d-447f-b633-6aa1ab8937b0" />
 </p>
 
 
